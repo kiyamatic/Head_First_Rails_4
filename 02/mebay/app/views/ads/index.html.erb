@@ -1,0 +1,7 @@
+<h1>All Ads</h1>
+
+<ul>
+<% @ad.each do |ad| %>
+<li><a href=" <%= ad.id %> "><%= ad.name %></li>
+<% end %>
+</ul>
