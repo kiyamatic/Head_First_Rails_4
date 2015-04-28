@@ -1,0 +1,20 @@
+
+<p>
+  <b>Name :<%= @ad.name %></b>
+</p>
+<p>
+  <b>discription :<%= @ad.discription %></b>
+</p>
+<p>
+  <b>Price :<%= @ad.price %></b>
+</p>
+<p>
+  <b>Seller :<%= @ad.seller_id %></b>
+</p>
+<p>
+  <b>Email :<%= @ad.email %></b>
+</p>
+<p>
+  <b><img src=" <%= @ad.img_url %> " /></b>
+</p>
+<p><%= link_to "update", edit_ad_path %></p>

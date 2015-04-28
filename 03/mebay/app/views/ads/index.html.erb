@@ -1,0 +1,10 @@
+<h1>All Ads</h1>
+
+<ul>
+<% @ad.each do |ad| %>
+
+<li><%= link_to ad.name, ad %>　<%= link_to "[削除]", ad, method: :DELETE, data: { confirm: "are you sure?" } %></li>
+<% end %>
+</ul>
+
+<%= link_to "new", new_ad_path %>
